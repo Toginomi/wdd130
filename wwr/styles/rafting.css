@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root{
     --primary-color: #5603AD;
     --secondary-color: #8367C7;
     --accent1-color: #F7F7FF;
-    --accent2-color: #40C9A2;
+    --accent2-color: #78bce3;
 
     --heading-font: "Archivo Black", display;
     --paragraph-font: "Roboto Mono", monospace;
@@ -14,28 +15,62 @@
     --nav-hover-background-color: var(--accent2-color);
 
     font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
-body{
-    font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 1500px;
     padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
-    color: var(--primary-color)
-}
-
-header{
-    padding: 20px;
-    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 p{
     padding: 25px;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1{
+    position: absolute;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 15%;
+    font-size: 2.0em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+}
+
+.hero article{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    height: 50%;
+}
+
+article img{
+    float: right;
+    max-width: 20%;
+    padding: 2%;
+    margin-top: 20px;
+}
+
+footer a{
+    text-decoration: none;
 }
 
 nav{
@@ -58,10 +93,4 @@ nav a:link, nav a:visited{
 nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-}
-
-.hero{
-    display: block;
-    width: 100%;
-    height: auto;
 }
