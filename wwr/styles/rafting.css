@@ -74,6 +74,12 @@ footer a{
     text-decoration: none;
 }
 
+footer img{
+    width: 30px;
+}
+
+
+
 nav{
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
