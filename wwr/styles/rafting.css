@@ -70,34 +70,92 @@ article img{
     margin-top: 20px;
 }
 
-footer a{
-    text-decoration: none;
-}
-
-footer img{
-    width: 30px;
-}
-
-
-
 nav{
-    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    margin: 1rem;
+    justify-content: space-around;
 }
 
 nav a{
     display: block;
-    color: var(--nav-link-color);
+    color: var(--primary-color);
     text-decoration: none;
     padding: 1rem;
 }
 
-nav a:link, nav a:visited{
-    color: var(--nav-link-color);
+nav a:link{
+    color: var(--primary-color);
 }
 
 nav a:hover{
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 5fr 10fr 1fr;
+	border-bottom: 1px solid #ccc;
+	max-width: 100%;
+}
+
+header img {
+	margin: auto;
+	width: 75px;
+	height: auto;
+}
+
+.history-content{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 200%;
+}
+
+.history img{
+	margin: auto;
+	width: 300px;
+	height: auto;
+}
+
+.adventure-images{
+    display: flex;
+    justify-content: space-around;
+}
+
+.adventure-images img{
+	margin: auto;
+	width: 200px;
+	height: 150px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icons{
+    justify-items: right;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer img{
+    width: 30px;
 }
