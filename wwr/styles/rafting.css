@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+/* Global declarations */
+
 :root{
     --primary-color: #5603AD;
     --secondary-color: #8367C7;
@@ -24,10 +26,75 @@ h1, h2, h3, h4, h5, h6{
     color: var(--primary-color);
 }
 
-p{
-    padding: 25px;
-    color: black;
+h2{
+    text-align: center;
+    font-size: 200%;
 }
+
+/* Header & Footer */
+
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 5fr 10fr 1fr;
+	border-bottom: 1px solid #ccc;
+	max-width: 100%;
+}
+
+header img {
+	margin: auto;
+	width: 75px;
+	height: auto;
+}
+
+nav{
+    font-size: 1.2rem;
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+nav a{
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link{
+    color: var(--primary-color);
+}
+
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.social-media-icons{
+    justify-items: right;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer p{
+    text-align: center;
+    padding: 25px;
+}
+
+footer img{
+    width: 30px;
+}
+
+/* About Us */
 
 .hero{
     position: relative;
@@ -63,58 +130,16 @@ p{
     height: 50%;
 }
 
-article img{
+.hero article img{
     float: right;
     max-width: 20%;
     padding: 2%;
     margin-top: 20px;
 }
 
-nav{
-    font-size: 1.2rem;
-    display: flex;
-    margin: 1rem;
-    justify-content: space-around;
-}
-
-nav a{
-    display: block;
-    color: var(--primary-color);
-    text-decoration: none;
-    padding: 1rem;
-}
-
-nav a:link{
-    color: var(--primary-color);
-}
-
-nav a:hover{
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-}
-
-header {
-	margin: 1rem auto;
-	display: grid;
-	grid-template-columns: 5fr 10fr 1fr;
-	border-bottom: 1px solid #ccc;
-	max-width: 100%;
-}
-
-header img {
-	margin: auto;
-	width: 75px;
-	height: auto;
-}
-
 .history-content{
     display: flex;
     justify-content: center;
-}
-
-h2{
-    text-align: center;
-    font-size: 200%;
 }
 
 .history img{
@@ -134,28 +159,116 @@ h2{
 	height: 150px;
 }
 
-figcaption{
+.adventure-images figcaption{
     text-align: center;
 }
 
-footer{
+/* Company Info */
+
+.company-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-info p {
+    color: #555;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-info p::before {
+    content: attr(data-icon);
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.map-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    margin: 0 auto;
+}
+
+/* Our Team */
+
+.our-team {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.our-team h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-members {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
-.social-media-icons{
-    justify-items: right;
-}
-
-footer a{
-    text-decoration: none;
-}
-
-footer p{
+.team-member {
     text-align: center;
+    margin: 0 10px;
 }
 
-footer img{
-    width: 30px;
+.team-member img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.team-member p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.contact-form {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

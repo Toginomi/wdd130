@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toginomi Rafting Contact Us Page">
+    <meta name="author" content="Rudy Francisco Pilande II">
+    <title>Contact Us - Toginomi Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Toginomi Rafting logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-us">
+            <div class="contact-form">
+                <h2>Send Us a Message</h2> 
+                <form action="/submit-contact" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Purpose of Message:</label>
+                        <div>
+                            <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                            <label for="inquiry">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                    <button type="submit">Send Your Message</button>
+                </form>
+            </div>
+            
+            <div class="our-team">
+                <h2>Our Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="images/profile-rudy.jpg" alt="Rudy Pilande II">
+                        <p>Rudy Pilande II</p>
+                        <p>CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/profile-ruth.jpg" alt="Ruth Mae Belgica">
+                        <p>Ruth Mae Belgica</p>
+                        <p>CEO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="company-info">
+                <h2>Company Information</h2>
+                <div class="contact-info">
+                    <p>rudyiipilande@gmail.com</p>
+                    <p>0962-081-2271</p>
+                    <p>407 Real St., Carigara, Leyte, Philippines</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d581.593326573373!2d124.68342832820274!3d11.299734859907232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33080f674412ea7f%3A0xa3b6be614d95fe76!2s407%20Real%20St%2C%20Carigara%2C%20Leyte!5e0!3m2!1sen!2sph!4v1716866339969!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;2024 | Toginomi Rafting | Rudy Francisco Pilande II</p>
+        <div class="social-media-icons">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://app.moqups.com/6Sn0bFkAhcb8IZ5uOkV2sD7m79K8FsdG/view/page/a29d6f3c2">
+                <img src="images/logo.png" alt="Contact Us Page Wireframe">
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
