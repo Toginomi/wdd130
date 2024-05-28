@@ -272,3 +272,7 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.contact-main h1{
+    visibility: hidden;
+}
